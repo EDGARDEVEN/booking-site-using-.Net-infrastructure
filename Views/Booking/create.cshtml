@@ -1,0 +1,14 @@
+@page
+@model booking.Models.Booking
+
+<h1>Create Booking</h1>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="BookingDate"></label>
+        <input asp-for="BookingDate" class="form-control" />
+        <span asp-validation-for="BookingDate" class="text-danger"></span>
+    </div>
+    <!-- Add other form fields as needed -->
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>

@@ -1,0 +1,13 @@
+@model Booking.Models.Booking
+<h1>Edit Booking</h1>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="BookingDate"></label>
+        <input asp-for="BookingDate" class="form-control" />
+        <span asp-validation-for="BookingDate" class="text-danger"></span>
+    </div>
+    <!-- Add other form fields as needed -->
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
