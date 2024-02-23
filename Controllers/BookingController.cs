@@ -1,22 +1,24 @@
 using Microsoft.AspNetCore.Mvc;
-using YourProject.Models;
-using YourProject.Data;
+using booking.Models;
+using booking.Data;
+using booking.Services;
+using Microsoft.EntityFrameworkCore;
 
 namespace booking.Controllers
 {
     public class BookingController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly AppDbContext dbContext;
 
-        public BookingController(ApplicationDbContext context)
+        public BookingController(AppDbContext dbContext )
         {
-            _context = context;
+            this.dbContext = dbContext;
         }
 
         public IActionResult Index()
         {
             // Display list of bookings
-            var bookings = _context.Bookings.ToList();
+            var bookings = dbContext.Bookings.ToList();
             return View(bookings);
         }
 
@@ -32,8 +34,8 @@ namespace booking.Controllers
             // Process booking form submission
             if (ModelState.IsValid)
             {
-                _context.Bookings.Add(booking);
-                _context.SaveChanges();
+                dbContext.Bookings.Add(booking);
+                dbContext.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(booking);

@@ -1,6 +1,9 @@
+namespace booking.Models
+{
 public class Booking
 {
     public int Id { get; set; }
+    public string CustomerName { get; set; }
     public int UserId { get; set; }
     public DateTime BookingDate { get; set; }
     public int FlightId { get; set; }
@@ -10,4 +13,5 @@ public class Booking
     public Hotel? Hotel { get; set; }
     public CarRental? CarRental { get; set; }
 
+}
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IJCzy1J2JUP8hEoarj+oVYManar7Y6W7B/HdI2l84PU=",
+  "Hash": "/7xwT1FKUAmSsy+8aAotSJ8sL00LtDdRQPLuE2HHXxU=",
   "Source": "booking",
   "BasePath": "_content/booking",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/home/carbanak/Desktop/booking/wwwroot/Index.cshtml",
+      "SourceId": "booking",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/carbanak/Desktop/booking/wwwroot/",
+      "BasePath": "_content/booking",
+      "RelativePath": "Index.cshtml",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "wwwroot/Index.cshtml"
     },
     {
       "Identity": "/home/carbanak/Desktop/booking/wwwroot/js/site.js",
