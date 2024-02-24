@@ -5,10 +5,6 @@
       "PackagePath": "staticwebassets/booking.bundle.scp.css"
     },
     {
-      "Id": "/home/carbanak/Desktop/booking/wwwroot/css/site.css",
-      "PackagePath": "staticwebassets/css/site.css"
-    },
-    {
       "Id": "/home/carbanak/Desktop/booking/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
     },

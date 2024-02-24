@@ -1,0 +1,41 @@
+@model List<Hotel>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search Results</title>
+    <!-- Add any necessary stylesheets or scripts here -->
+</head>
+<body>
+    <h1>Hotel Search Results</h1>
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Location</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var hotel in Model)
+                {
+                    <tr>
+                        <td>@hotel.Name</td>
+                        <td>@hotel.Location</td>
+                        <td>@hotel.Price</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No hotels found.</p>
+    }
+</body>
+</html>

@@ -6,11 +6,18 @@ using booking.Data;
 using Pomelo.EntityFrameworkCore.MySql.Infrastructure;
 using Microsoft.Extensions.Configuration;
 using System;
+using booking.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddScoped<FlightService>();
+builder.Services.AddScoped<HotelService>();
+builder.Services.AddScoped<CarRentalService>();
+
+
 
 // Register DbContext
 builder.Services.AddDbContext<AppDbContext>(options =>
@@ -36,6 +43,31 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Booking}/{action=Index}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
+
+app.MapControllerRoute(
+    name: "flights",
+    pattern: "/flights",
+    defaults: new { controller = "Travel", action = "FlightSearch" }
+);
+
+app.MapControllerRoute(
+    name: "hotels",
+    pattern: "/hotels",
+    defaults: new { controller = "Travel", action = "HotelSearch" }
+);
+
+app.MapControllerRoute(
+    name: "carRentals",
+    pattern: "/car-rentals",
+    defaults: new { controller = "Travel", action = "CarRentalSearch" }
+);
+
+app.MapControllerRoute(
+    name: "flightResults",
+    pattern: "/flights/results",
+    defaults: new { controller = "Travel", action = "SearchFlights" }
+);  
+
 
 app.Run();

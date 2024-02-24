@@ -13,10 +13,10 @@ namespace booking.Services
             // For demonstration purposes, let's return a list of dummy flights
             return new List<Flight>
             {
-                new Flight { Id = 1, Origin = "New York", Destination = "Los Angeles", DepartureDate = searchModel.DepartureDate },
-                new Flight { Id = 2, Origin = "Los Angeles", Destination = "New York", DepartureDate = searchModel.DepartureDate },
-                new Flight { Id = 3, Origin = "New York", Destination = "Chicago", DepartureDate = searchModel.DepartureDate },
-                new Flight { Id = 4, Origin = "Chicago", Destination = "New York", DepartureDate = searchModel.DepartureDate },
+                new Flight { Id = 1, Origin = "New York", Destination = "Los Angeles", Departure = searchModel.DepartureDate },
+                new Flight { Id = 2, Origin = "Los Angeles", Destination = "New York", Departure = searchModel.DepartureDate },
+                new Flight { Id = 3, Origin = "New York", Destination = "Chicago", Departure = searchModel.DepartureDate },
+                new Flight { Id = 4, Origin = "Chicago", Destination = "New York", Departure = searchModel.DepartureDate },
                 
                 // Add more flights as needed
             };

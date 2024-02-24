@@ -1,0 +1,36 @@
+@if (Model != null && Model.Count > 0)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Flight Number</th>
+                <!-- Ensure Departure property exists -->
+                @if (Model.Any())
+                {
+                    <th>Departure</th>
+                }
+                <th>Arrival</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var flight in Model)
+            {
+                <tr>
+                    <td>@flight.FlightNumber</td>
+                    <!-- Check if Departure property exists -->
+                    @if (flight.Departure != null)
+                    {
+                        <td>@flight.Departure</td>
+                    }
+                    <td>@flight.Arrival</td>
+                    <td>@flight.Price</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No flights found.</p>
+}

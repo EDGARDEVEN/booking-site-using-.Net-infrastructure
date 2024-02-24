@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/7xwT1FKUAmSsy+8aAotSJ8sL00LtDdRQPLuE2HHXxU=",
+  "Hash": "rfgo0m4DP3HWRS6FKBBfkz1t5oTPi18d4wrorvjWWAM=",
   "Source": "booking",
   "BasePath": "_content/booking",
   "Mode": "Default",
@@ -55,25 +55,6 @@
       "OriginalItemSpec": "/home/carbanak/Desktop/booking/obj/Debug/net8.0/scopedcss/projectbundle/booking.bundle.scp.css"
     },
     {
-      "Identity": "/home/carbanak/Desktop/booking/wwwroot/css/site.css",
-      "SourceId": "booking",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/carbanak/Desktop/booking/wwwroot/",
-      "BasePath": "_content/booking",
-      "RelativePath": "css/site.css",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
-    },
-    {
       "Identity": "/home/carbanak/Desktop/booking/wwwroot/favicon.ico",
       "SourceId": "booking",
       "SourceType": "Discovered",
@@ -91,25 +72,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
-    },
-    {
-      "Identity": "/home/carbanak/Desktop/booking/wwwroot/Index.cshtml",
-      "SourceId": "booking",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/carbanak/Desktop/booking/wwwroot/",
-      "BasePath": "_content/booking",
-      "RelativePath": "Index.cshtml",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "wwwroot/Index.cshtml"
     },
     {
       "Identity": "/home/carbanak/Desktop/booking/wwwroot/js/site.js",

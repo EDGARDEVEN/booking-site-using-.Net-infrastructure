@@ -3,6 +3,7 @@ using booking.Models;
 using System.Collections.Generic;
 using booking.Services;
 using booking.Data;
+using System;
 
 
 namespace booking.Controllers
@@ -15,9 +16,9 @@ namespace booking.Controllers
 
     public TravelController(FlightService flightService, HotelService hotelService, CarRentalService carRentalService)
     {
-        _flightService = flightService;
-        _hotelService = hotelService;
-        _carRentalService = carRentalService;
+        _flightService = flightService ?? throw new System.ArgumentNullException(nameof(flightService));
+        _hotelService = hotelService ?? throw new System.ArgumentNullException(nameof(hotelService));
+        _carRentalService = carRentalService ?? throw new System.ArgumentNullException(nameof(carRentalService));
     }
 
     // Other controller actions

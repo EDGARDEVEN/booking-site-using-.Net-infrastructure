@@ -1,8 +1,67 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+</head>
+<body>
+    <header style="background-color: #333; color: #fff; padding: 10px;">
+        <nav>
+            <ul style="list-style-type: none; padding: 0; margin: 0;">
+                <li style="display: inline-block; margin-right: 10px;"><a href="/" style="text-decoration: none; color: #fff;">Home</a></li>
+                <li style="display: inline-block; margin-right: 10px;"><a href="/flights" style="text-decoration: none; color: #fff;">Flights</a></li>
+                <li style="display: inline-block; margin-right: 10px;"><a href="/hotels" style="text-decoration: none; color: #fff;">Hotels</a></li>
+                <li style="display: inline-block; margin-right: 10px;"><a href="/carrentals" style="text-decoration: none; color: #fff;">Car Rentals</a></li>
+                <li style="display: inline-block; margin-right: 10px;"><a href="/booking" style="text-decoration: none; color: #fff;">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero" style="background-color: #f2f2f2; padding: 50px; text-align: center;">
+        <h1>Welcome to Travel Booking</h1>
+        <p>Plan your next adventure with ease!</p>
+        <!-- Search forms for flights, hotels, and car rentals -->
+        <form action="" method="get" style="margin-bottom: 20px;">
+            <input type="text" name="flight" id="flight" placeholder="Search for flights">
+            <input type="submit" value="Search">
+        </form>
+        <form action="" method="get" style="margin-bottom: 20px;">
+            <input type="text" name="hotel" id="hotel" placeholder="Search for hotels">
+            <input type="submit" value="Search">
+        </form>
+        <form action="" method="get" style="margin-bottom: 20px;">
+            <input type="text" name="carrental" id="carrental" placeholder="Search for car rentals">
+            <input type="submit" value="Search">
+        </form>
+    </section>
+    <section id="features" style="padding: 50px;">
+        <!-- Feature cards or sections showcasing the main features -->
+        <div style="display: flex; justify-content: space-around;">
+            <div style="text-align: center;">
+                <h2>Flights</h2>
+                <p>Find the best deals on flights to your next destination.</p>
+            </div>
+            <div style="text-align: center;">
+                <h2>Hotels</h2>
+                <p>Book a hotel room for your stay at your next destination.</p>
+            </div>
+            <div style="text-align: center;">
+                <h2>Car Rentals</h2>
+                <p>Rent a car for your stay at your next destination.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Other sections and content -->
+    <section id="about" style="background-color: #333; color: #fff; padding: 50px; text-align: center;">
+        <h2>About Us</h2>
+        <p>Travel Booking is a website that allows you to book flights, hotels, and car rentals for your next trip. We offer the best deals and make it easy to plan your next adventure.</p>
+    </section>
+    <section id="contact" style="padding: 50px; text-align: center;">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need assistance, please contact us at <a href="mailto:info@travelbookingapp.com"></a>
+    <footer style="background-color: #333; color: #fff; text-align: center; padding: 20px;">
+        <!-- Footer content -->
+        <p>&copy; 2024 Travel Booking</p>
+    </footer>
+</body>
+</html>
